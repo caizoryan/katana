@@ -63,10 +63,9 @@
 
 (defvar
   tap-timeout   100
-  hold-timeout  200
+  hold-timeout  180
   tt $tap-timeout
   ht $hold-timeout
-
 )
 
 (defalias
@@ -88,7 +87,7 @@
   _  _     _    _    _    _    _    _    _    _    _    _    _     _
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @esc  @a  @s   @d   @f    g    h   @j   @k   @l    @sem    '    ret
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft up
+  lsft z    x    c    v    b    n    m    ,    .    '    rsft up
   _ lalt @esc          @spc            lctl rmet   rctl left down rght
 )
 
@@ -103,7 +102,7 @@
 (deflayer nav
   caps 1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  \    1    2    3    /    y    u    -    =    p    [    ]    \
-  grv  lctl lalt lctl lsft ]     left down up rght _    '    ret
+  grv  lctl lalt lmet lsft ]     left down up rght _    '    ret
   lsft `    7    8    9    0    n    m    ,    .    /    rsft _
   _ lalt lmet          spc            lctl rmet   rctl _  _  _
 )
